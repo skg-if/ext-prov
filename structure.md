@@ -1,7 +1,7 @@
 ---
 title: Repository structure
 layout: default
-parent: Extension template
+parent: Provenance extension
 nav_order: 1
 # nav_exclude: true
 # search_exclude: true
@@ -13,7 +13,7 @@ While most of the structure is in general non-prescriptive, some parts (e.g., ve
 Please review the following to learn how to structure information in your repository.
 
 {: .highlight }
-Provided that your extension acronym of choice is `tmpl`, the extension repository will be named [`ext-tmpl`](https://github.com/skg-if/ext-tmpl) to conveniently locate extension repositories under the [SKG-IF organisation](https://github.com/orgs/skg-if/repositories) on GitHub. 
+Provided that your extension acronym of choice is `prov`, the extension repository will be named [`ext-prov`](https://github.com/skg-if/ext-prov) to conveniently locate extension repositories under the [SKG-IF organisation](https://github.com/orgs/skg-if/repositories) on GitHub. 
 
 ## The `data-model` folder
 This folder contains material necessary to implement the data model for SKG-IF extension. 
@@ -22,7 +22,7 @@ It contains:
 * The directory `ontology`, which includes all the versions of the OWL ontology developed for implementing the data model. In particular, this directory:
   * must contain a directory for each version of the ontology developed, named using the [semantic versioning system](https://semver.org/) of the version of the ontology (e.g., `1.0.0`, `1.1.3`, `2.5.1`, etc.); 
   * must contain the directory `current` that contains the last available version of the ontology;
-  * all OWL files defining the ontology (despite the version considered) must be named using the acronym of the extension as defined in the related SKG-IF GitHub repository assigned with the extension, without considering the prefix `ext-`, plus a `.` and the format used to linearised the ontology - N-Triples (`.nt`), Turtle (`.ttl`), RDF/XML (`.xml`), JSON-LD (`.json`), and HTML (`.html`). For instance, the file name for the ontology defined for implementing the data model of this extension template in Turtle format is `tmpl.ttl`.
+  * all OWL files defining the ontology (despite the version considered) must be named using the acronym of the extension as defined in the related SKG-IF GitHub repository assigned with the extension, without considering the prefix `ext-`, plus a `.` and the format used to linearised the ontology - N-Triples (`.nt`), Turtle (`.ttl`), RDF/XML (`.xml`), JSON-LD (`.json`), and HTML (`.html`). For instance, the file name for the ontology defined for implementing the data model of this provenance extension in Turtle format is `prov.ttl`.
 * The directory `shacl` contains all the versions of the SHACL document developed, to track the evolution of the semantic validation document in time. This directory:
   * must contain a directory for each version of the SHACL document developed, named using the [semantic versioning system](https://semver.org/) of the version of the context (e.g., `1.0.0`, `1.1.3`, `2.5.1`, etc.); 
   * must contain the directory `current` that contains the last available version of the SHACL document;
@@ -50,9 +50,9 @@ An exemplar structure has been provided in the current template, containing the 
   https://w3id.org/skg-if/extension/<extension acronym>/validation/shacl/<X.Y.Z>/
   ```
 
-The `<extension acronym>` in the URLs above is the acronym of the extension as defined in the related SKG-IF GitHub repository assigned with the extension, without considering the prefix `ext-`. For instance, the current ontology for the this extension template is accessible at the URL [https://w3id.org/skg-if/extension/tmpl/ontology/](https://w3id.org/skg-if/extension/tmpl/ontology/).
+The `<extension acronym>` in the URLs above is the acronym of the extension as defined in the related SKG-IF GitHub repository assigned with the extension, without considering the prefix `ext-`. For instance, the current ontology for the this provenance extension is accessible at the URL [https://w3id.org/skg-if/extension/prov/ontology/](https://w3id.org/skg-if/extension/prov/ontology/).
 
-Instead, `<X.Y.Z>` in the URLs above identifies the version number of the particular context developed for the extension. For instance, the ontology having version `1.0.0` is accessible at the URL [https://w3id.org/skg-if/extension/tmpl/ontology/1.0.0/](https://w3id.org/skg-if/extension/tmpl/ontology/1.0.0/).
+Instead, `<X.Y.Z>` in the URLs above identifies the version number of the particular context developed for the extension. For instance, the ontology having version `1.0.0` is accessible at the URL [https://w3id.org/skg-if/extension/prov/ontology/1.0.0/](https://w3id.org/skg-if/extension/prov/ontology/1.0.0/).
 
 
 ## The `context` folder
@@ -74,9 +74,9 @@ An exemplar structure has been provided in the current template, containing the 
   https://w3id.org/skg-if/extension/<extension acronym>/context/<X.Y.Z>/skg-if.json
   ```
 
-The `<extension acronym>` in the URLs above is the acronym of the extension as defined in the related SKG-IF GitHub repository assigned with the extension, without considering the prefix `ext-`. For instance, the current context is accessible at the URL [https://w3id.org/skg-if/extension/tmpl/context/skg-if.json](https://w3id.org/skg-if/extension/tmpl/context/skg-if.json).
+The `<extension acronym>` in the URLs above is the acronym of the extension as defined in the related SKG-IF GitHub repository assigned with the extension, without considering the prefix `ext-`. For instance, the current context is accessible at the URL [https://w3id.org/skg-if/extension/prov/context/skg-if.json](https://w3id.org/skg-if/extension/prov/context/skg-if.json).
 
-Instead, `<X.Y.Z>` in the URLs above identifies the version number of the particular context developed for the extension. For instance, the context having version `1.0.0` is accessible at the URL [https://w3id.org/skg-if/extension/tmpl/context/1.0.0/skg-if.json](https://w3id.org/skg-if/extension/tmpl/context/1.0.0/skg-if.json).
+Instead, `<X.Y.Z>` in the URLs above identifies the version number of the particular context developed for the extension. For instance, the context having version `1.0.0` is accessible at the URL [https://w3id.org/skg-if/extension/prov/context/1.0.0/skg-if.json](https://w3id.org/skg-if/extension/prov/context/1.0.0/skg-if.json).
 
 
 ## The `interoperability-framework` folder

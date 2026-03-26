@@ -1,4 +1,4 @@
-# extension-template
+# Provenance extension
 
-This repository is a blank template of an SKG-IF extension.
+TODO documentation
 

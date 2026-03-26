@@ -1,6 +1,6 @@
 ---
 title: Data model
-parent: Extension template
+parent: Provenance extension
 layout: default
 nav_order: 3
 # nav_exclude: false
@@ -9,10 +9,10 @@ nav_order: 3
 # Extended data model
 
 {: .important }
-To prevent possible clashes with other extensions, each extension is assigned a unique prefix (e.g., the acronym you provided upon requesting an extension) that you need to prepend when defining new properties and relations for core entities. For this extension, the acronym is `tmpl`.
+To prevent possible clashes with other extensions, each extension is assigned a unique prefix (e.g., the acronym you provided upon requesting an extension) that you need to prepend when defining new properties and relations for core entities. For this extension, the acronym is `prov`.
 
 ## Main objective
-This extension template extends the [SKG-IF Ontology](https://w3id.org/skg-if/ontology/) in two ways:
+This provenance extension extends the [SKG-IF Ontology](https://w3id.org/skg-if/ontology/) in two ways:
 - It introduces a *new entity Comment*, which captures a textual comment possibly relevant to a research product;
 - It introduces a *new property* for [Research products](../../interoperability-framework/docs/research-product) in order to point to the relative Comment(s).
 
@@ -24,7 +24,7 @@ In this modelling phase, two outcomes are expected
 
 These files need to be placed as indicated [here](../structure). In this way, everything will be automatically wired-up in order to deliver behind w3id.org and content negotiation all the assets developed within the extension.
 
-For example: this extension's ontology can be found at  [https://w3id.org/skg-if/extension/tmpl/ontology](https://w3id.org/skg-if/extension/tmpl/ontology).
+For example: this extension's ontology can be found at  [https://w3id.org/skg-if/extension/prov/ontology](https://w3id.org/skg-if/extension/prov/ontology).
 
 
 ## Methodological considerations
@@ -61,7 +61,7 @@ A few **simple, yet optional, recommendations** are provided for guide the devel
 - To improve readability, use labels in the ontology description for entities and properties "surfacing" to the actual [extended Interoperability Framework](../extended-interoperability-framework/), i.e., as terms in the [JSON-LD context](../context/). Here below, a triple for a label used for this extension is reported.
 
     ```
-    <http://schema.org/comment> rdfs:label "schema:comment (SKG-IF labels: tmpl_comments)" .
+    <http://schema.org/comment> rdfs:label "schema:comment (SKG-IF labels: prov_comments)" .
     ```
 
 -  SKG-IF provides a [SHACL extractor](https://github.com/skg-if/shacl-extractor) that simplifies and streamlines the creation from scratch of the required [SHACL file](./shacl) starting from the ontology description produced in this phase. To this end, the following template is advised in order to parse automatically the descriptions.
@@ -93,7 +93,7 @@ For this extension, WIDOCO has been run from the dockerised version with
 docker run -ti --rm \
   -v `pwd`/test:/usr/local/widoco/in:Z \
   -v `pwd`/target/generated-doc:/usr/local/widoco/out:Z \
-  dgarijo/widoco -ontFile in/tmpl.ttl -outFolder out -rewriteAll -noPlaceHolderText
+  dgarijo/widoco -ontFile in/prov.ttl -outFolder out -rewriteAll -noPlaceHolderText
 ```
 The files produced under `generated-doc` have been placed in the extension repository as indicated [here](../structure).
 

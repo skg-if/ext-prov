@@ -1,13 +1,13 @@
-<https://w3id.org/skg-if/extension/tmpl/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/skg-if/extension/tmpl/ontology/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/skg-if/extension/tmpl/ontology/1.0.0/> .
-<https://w3id.org/skg-if/extension/tmpl/ontology/> <http://purl.org/dc/elements/1.1/date> "2025-05-07" .
-<https://w3id.org/skg-if/extension/tmpl/ontology/> <http://purl.org/dc/elements/1.1/rights> "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)" .
-<https://w3id.org/skg-if/extension/tmpl/ontology/> <http://purl.org/dc/elements/1.1/title> "SKG-IF Ontology: Extension template" .
-<https://w3id.org/skg-if/extension/tmpl/ontology/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tmpl" .
-<https://w3id.org/skg-if/extension/tmpl/ontology/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/skg-if/extension/tmpl/ontology/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<https://w3id.org/skg-if/extension/tmpl/ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "This extension template of the SKG-IF data model introduces is intended to kickstart extensions development. It just introduces a new class Comment and links it to Research products." .
-<https://w3id.org/skg-if/extension/tmpl/ontology/> <http://www.w3.org/2000/01/rdf-schema#label> "SKG-O: extension template" .
-<https://w3id.org/skg-if/extension/tmpl/ontology/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<https://w3id.org/skg-if/extension/prov/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/skg-if/extension/prov/ontology/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/skg-if/extension/prov/ontology/1.0.0/> .
+<https://w3id.org/skg-if/extension/prov/ontology/> <http://purl.org/dc/elements/1.1/date> "2025-05-07" .
+<https://w3id.org/skg-if/extension/prov/ontology/> <http://purl.org/dc/elements/1.1/rights> "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)" .
+<https://w3id.org/skg-if/extension/prov/ontology/> <http://purl.org/dc/elements/1.1/title> "SKG-IF Ontology: Provenance extension" .
+<https://w3id.org/skg-if/extension/prov/ontology/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "prov" .
+<https://w3id.org/skg-if/extension/prov/ontology/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/skg-if/extension/prov/ontology/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/skg-if/extension/prov/ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "This provenance extension of the SKG-IF data model introduces is intended to kickstart extensions development. It just introduces a new class Comment and links it to Research products." .
+<https://w3id.org/skg-if/extension/prov/ontology/> <http://www.w3.org/2000/01/rdf-schema#label> "SKG-O: provenance extension" .
+<https://w3id.org/skg-if/extension/prov/ontology/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
 # 
 # 
 # #################################################################
@@ -47,7 +47,7 @@
 # http://schema.org/comment
 <http://schema.org/comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://schema.org/comment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
-<http://schema.org/comment> <http://www.w3.org/2000/01/rdf-schema#label> "schema:comment (SKG-IF labels: tmpl_comments)" .
+<http://schema.org/comment> <http://www.w3.org/2000/01/rdf-schema#label> "schema:comment (SKG-IF labels: prov_comments)" .
 # 
 # 
 # 
@@ -61,7 +61,7 @@
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:description (SKG-IF labels: tmpl_content)" .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:description (SKG-IF labels: prov_content)" .
 # 
 # 
 # 
@@ -82,6 +82,6 @@
 <http://schema.org/Comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://schema.org/Comment> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* dcterms:description -[0..1]-> rdfs:Literal" .
 <http://schema.org/Comment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
-<http://schema.org/Comment> <http://www.w3.org/2000/01/rdf-schema#label> "schema:Comment (SKG-IF labels: tmpl_comment)" .
+<http://schema.org/Comment> <http://www.w3.org/2000/01/rdf-schema#label> "schema:Comment (SKG-IF labels: prov_comment)" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

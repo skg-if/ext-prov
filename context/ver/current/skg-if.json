@@ -4,11 +4,11 @@
         "@protected": true,
         "schema": "http://schema.org/",
 
-        "tmpl_comment": "schema:Comment",
-        "tmpl_comments": {
+        "prov_comment": "schema:Comment",
+        "prov_comments": {
             "@id": "schema:comment",
             "@type": "@vocab"
             },
-        "tmpl_content": "dcterms:description"
+        "prov_content": "dcterms:description"
     }
 }
