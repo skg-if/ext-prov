@@ -22,7 +22,7 @@ Here below, please describe the new properties and relations that the extension 
 *List* (optional): a list of [Comment] identifiers.
 
 ```json
-    "prov_comments": ["comment_1", "comment_2"]
+"prov_comments": ["comment_1", "comment_2"]
 ```
 
 ----
